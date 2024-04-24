@@ -1,45 +1,40 @@
 body {
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    background-color: #282c35;
-    color: #fff; */
-    margin: 0;
-    padding: 0;
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
+    /* background-color: #282c35; */
+    background-color: #000;
+    color: #fff; 
+    margin: auto;
     /* background: var(--background); */
 }
 
+#wrap{
+  width:100%;
+  opacity: 0.9;
+  overflow: auto;
+  display:inline-flex;
+  justify-content: center;
+  background-color:#212529;
+}
+
 header {
-    text-align: center;
-    padding: 50px;
+    /* text-align: center; */
+    margin: auto;
+    width: 100%;
+    display:inline-flex;
+    justify-content: center;
+    
     /* background-color: #1a1e24; */
     /* background-color: #212529; */
 }
 
-h1 {
+/* h1 {
     font-family: 'Rubik Glitch';
-    /* color: #61dafb; */
+     color: #61dafb; 
     font-size: 10em;
     font-weight: normal;
     margin-bottom: 10px;
 } 
-
-p {
-    line-height: 1.6;
-} 
-
-section {
-    padding: 30px;
-   
-}
-
-h2 {
-    /* color: #61dafb; */
-    font-size: 3em;
-    font-weight: normal;
-    font-family: 'Rubik Glitch';
-} 
+ */
 
 footer {
     text-align: center;
@@ -55,6 +50,7 @@ footer {
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
+    width: 45%;
   }
   
   .right {
@@ -68,9 +64,10 @@ footer {
   }
   
   .stack span {
+
     /* color: #61dafb; */
     color:#fff;
-    font-size: 10em;
+    font-size: 10rem;
     font-weight: normal;
     font-family: 'Rubik Glitch';
     /* font-weight: bold; */
@@ -85,7 +82,7 @@ footer {
     animation: stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
   }
   
-  .stack span:nth-child(odd) { --glitch-translate: 8px; }
+  .stack span:nth-child(odd) { --glitch-translate: 10px; }
   .stack span:nth-child(even) { --glitch-translate: -8px; }
   
   @keyframes stack {
@@ -118,3 +115,5 @@ footer {
     }
     4%, 100% {  text-shadow: none; transform: none; }
   }
+
+  /* https://codepen.io/aldrie/pen/PojGYLo */
