@@ -2,6 +2,7 @@ body {
     background-color: #000;
     color: #fff; 
     margin: auto;
+    padding: 4px 4px 0px 4px;
 }
 
 #wrap{
@@ -13,43 +14,40 @@ body {
   background-color:#212529;
 }
 
-header {
-    /* text-align: center; */
-    margin: auto;
-    width: 100%;
-    display:inline-flex;
-    justify-content: center;
-    
-    /* background-color: #1a1e24; */
-    /* background-color: #212529; */
+#links{
+  width:25%
 }
 
-/* h1 {
-    font-family: 'Rubik Glitch';
-     color: #61dafb; 
-    font-size: 10em;
-    font-weight: normal;
-    margin-bottom: 10px;
-} 
- */
+header {
+  margin: auto;
+  width: 100%;
+  display:inline-flex;
+  justify-content: center;
+}
+
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #1a1e24;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  text-align: center;
+  padding: 10px;
+  background-color: #1a1e24;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 .container {
-    color: var(--color);
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    width: 45%;
+  width: 45%;
+  color: var(--color);
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+  justify-content: center;
   }
   
+  .left{
+    text-align: left;
+  }
   .right {
     text-align: right;
     width: 100%;
@@ -57,20 +55,19 @@ footer {
   
   .stack {
     display: grid;
+    width: 10%;
     grid-template-columns: 1fr;
+    margin:auto;
+    justify-content: center;
   }
   
   .stack span {
-
-    /* color: #61dafb; */
-    color:#fff;
+    color:#fff;  
     font-size: 10rem;
     font-weight: normal;
     font-family: 'Rubik Glitch';
-    /* font-weight: bold; */
     grid-row-start: 1;
     grid-column-start: 1;
-    /* font-size: 4rem; */
     --stack-height: calc(100% / var(--stacks) - 1px);
     --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
     --clip-top: calc(var(--stack-height) * var(--index));
@@ -114,3 +111,23 @@ footer {
   }
 
   /* https://codepen.io/aldrie/pen/PojGYLo */
+  
+
+  @media (max-width: 600px) {
+    /* Adjust the font size for better readability on mobile devices */
+    .stack span {
+        font-size: 5rem; /* Adjust the font size to a smaller value */
+    }
+ 
+    .container {
+      font-size: 0.6rem;
+    }
+
+    #wrap{
+      display:block;
+    }
+
+    #links{
+      width:100%
+    }
+}
