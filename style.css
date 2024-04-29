@@ -1,30 +1,108 @@
+*{
+  /* font-family: "Press Start 2P"; */
+  font-family: "VT323";
+  color: #fff; 
+  /* border-style: solid; */
+  border-width: 1px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img{
+  float: right;
+  border-radius: 100%; 
+}
 body {
-    background-color: #000;
-    color: #fff; 
-    margin: auto;
-    padding: 4px 4px 0px 4px;
+    background-color: #222;
+    margin: auto; 
+    padding: 4px 4px 0px 4px ;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 4rem;
+    height: 100%;
+    font-size: 1.5rem;
+}
+
+/* #header{
+  margin: 4px;
+} */
+
+#typed{
+  text-wrap: wrap;
+  min-height:50px;
+  font-size: 2rem;
+  /* justify-content: center; */
+  /* width: 80%; */
+  /* padding-left: 10%; */
+  /* white-space: pre; */
 }
 
 #wrap{
-  width:100%;
-  opacity: 0.9;
-  overflow: auto;
-  display:inline-flex;
-  justify-content: center;
-  background-color:#212529;
+  display: inline-flex;
+}
+ 
+ul{
+  margin: 0;
+  padding: 0;
 }
 
-#links{
-  width:25%
+
+a{
+  font-size: 1.7em;
 }
 
-header {
-  margin: auto;
+/* Style the label when it's hovered 
+label:hover {
+  background-color: lightgray;
+}
+
+/* Style the radio button when the label is hovered 
+label:hover + input[type="radio"] {
+  display: inline-block;
+}
+*/
+a:hover {
+  color: #fff;
+}
+
+
+.textbox{
+  border-style: solid;
+  border-color: #fff;
+  border-width: 0.3rem;
+  border-radius: 10px;
+  padding: 10px;
+  min-height: 80%;
+  width: 99%;
+}
+label{
   width: 100%;
-  display:inline-flex;
-  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.nes-container{
+  border-radius: 10px; 
 }
 
+.nes-container.is-dark.with-title .title{
+  font-size: 2.2rem;
+  margin-top: -47px;
+}
+#links{
+  width:20%;
+} 
+#aboutme{
+  width: 80%;
+}
+a{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  color: #fff;
+}
 
 footer {
   text-align: center;
@@ -33,101 +111,44 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+  margin-top: 4rem;
 }
 
-.container {
-  width: 45%;
-  color: var(--color);
-  font-size: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  margin:auto;
-  justify-content: center;
+@media (max-width: 1075px) {
+  img{
+    margin-top: 30px;
+    max-width: 25%; 
+    max-height: 25%;
   }
-  
-  .left{
-    text-align: left;
-  }
-  .right {
-    text-align: right;
-    width: 100%;
-  }
-  
-  .stack {
-    display: grid;
-    width: 10%;
-    grid-template-columns: 1fr;
-    margin:auto;
-    justify-content: center;
-  }
-  
-  .stack span {
-    color:#fff;  
-    font-size: 10rem;
-    font-weight: normal;
-    font-family: 'Rubik Glitch';
-    grid-row-start: 1;
-    grid-column-start: 1;
-    --stack-height: calc(100% / var(--stacks) - 1px);
-    --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
-    --clip-top: calc(var(--stack-height) * var(--index));
-    --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
-    clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
-    animation: stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
-  }
-  
-  .stack span:nth-child(odd) { --glitch-translate: 10px; }
-  .stack span:nth-child(even) { --glitch-translate: -8px; }
-  
-  @keyframes stack {
-    0% {
-      opacity: 0;
-      transform: translateX(-50%);
-      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
-    };
-    60% {
-      opacity: 0.5;
-      transform: translateX(50%);
-    }
-    80% {
-      transform: none;
-      opacity: 1;
-      text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
-    }
-    100% {
-      text-shadow: none;
-    }
-  }
-  
-  @keyframes glitch {
-    0% {
-      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
-      transform: translate(var(--glitch-translate));
-    }
-    2% {
-      text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
-    }
-    4%, 100% {  text-shadow: none; transform: none; }
-  }
-
-  /* https://codepen.io/aldrie/pen/PojGYLo */
-  
-
-  @media (max-width: 600px) {
-    /* Adjust the font size for better readability on mobile devices */
-    .stack span {
-        font-size: 5rem; /* Adjust the font size to a smaller value */
-    }
- 
-    .container {
-      font-size: 0.6rem;
-    }
-
     #wrap{
-      display:block;
+      /* width: 99%;
+       margin: inherit; */
+      /* margin-right: 0px; */
+      display:grid;
     }
-
     #links{
       width:100%
     }
+    label{
+      width:auto;
+    }
+    #aboutme{
+      width:100%
+    }
+    #typed{
+      /* height:50px; */
+      /* font-size:small; */
+     }
 }
+  @media (max-width: 900px) {
+    #wrap{
+      /* width: 100%; */
+    }
+    #links{
+      /* width:100% */
+    }
+    #typed{
+      height:50px;
+      font-size: medium;
+     }
+} 

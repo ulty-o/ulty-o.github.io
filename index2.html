@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik+Glitch" rel="stylesheet">
-    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="glitchheader.css">
     <script src="typing.js"></script>
@@ -15,11 +15,10 @@
 </head>
 
 <body onload="loadTyping()">
-    <div>
-        <!-- <div class="nes-container is-dark" style="border: none;"></div> -->
-        <div class="nes-container is-dark" id="header">
-            <img src="imgs/ulty.jpg"/>
-        <div class="container">
+    <header >
+        <!-- <div class="nes-container is-dark" style="border-radius: 10px; margin:auto;"> -->
+        <!-- <img src="imgs/sh.png" alt="Banner"> -->
+            <div class="container">
                 <span class="left">self-actualizing</span>
                 <div class="stack" style="--stacks: 3;">
                     <span style="--index: 0;">ulty_o</span>
@@ -28,54 +27,41 @@
                 </div>
                 <span class="right">in cyberspace</span>
             </div>
-            <div class="nes-container is-dark">
-                <p id="typed"></p>
-            </div>
-        </div>
-    </div>
+            <!-- <p id="typed"></p> -->
+        </header>
+          
     <div id="wrap">
-        <div id="links" class="nes-container is-dark with-title">
-            <p class="title">links</p>
-                    <div style="background-color:#212529; padding:0; position: relative; top: -10px;">
-                        <label>
-                            <input type="radio" class="nes-radio is-dark" name="answer" checked/>
-                            <span id="radio-text"><a href="#">home</a></span>
-                        </label>
-                        <label>
-                            <input type="radio" class="nes-radio is-dark" name="answer2" checked/>
-                            <span><a href="./index3.html">philo</a></span>
-                        </label>
-                        <label>
-                            <input type="radio" class="nes-radio is-dark" name="answer3" checked/>
-                            <span><a href="#">home</a></span>
-                        </label>
-                        <label>
-                            <input type="radio" class="nes-radio is-dark" name="answer4" checked/>
-                            <span><a href="#">home</a></span>
-                        </label>
-                    </div>
-        </div>
-    
-        <div id = "aboutme" class="nes-container is-dark with-title">
+        <div class="textbox" style="width:85%;">
             <p class="title">about me</p>
             <p>Pellentesque a eros eget quam euismod sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed tincidunt nibh, ac tristique urna. Quisque a mi sed lectus tempor sollicitudin. Vivamus venenatis porttitor nisl. Morbi eleifend nisl at nibh semper mattis. Morbi interdum neque et justo congue vulputate. Vestibulum eget ornare neque. Nullam suscipit risus at feugiat lobortis. Vivamus pharetra facilisis urna, quis eleifend nisl. Quisque sed luctus elit.</p>
         </div >
-    </div>
 
-        <div class="nes-container is-dark with-title">
+        <div id="links" class="textbox">
+            <p class="title">links</p>
+            <nav > 
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#Core Values">About Me</a></li>
+                    <li><a href="games.html">My Games</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+        <div class="textbox">
             <p class="title">socials</p>
-            <!-- <p>No contact information provided.</p> -->
+            <!-- <p>No contact information provided
             <section class="icon-list">
-                <!-- twitter -->
+                twitter
                 <a href="https://twitter.com/ulty_o"><i class="nes-icon twitter is-medium"></i></a>
             
-                <!-- github -->
+                 github
                 <i class="nes-icon github is-medium"></i>
             
-                <!-- youtube
+                youtube
                 <i class="nes-icon youtube is-large"></i>
-                -->
-            </section>
+                
+            </section>-->
         </div >
  
         <footer>
