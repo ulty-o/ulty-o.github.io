@@ -1,6 +1,6 @@
       /* https://codepen.io/aldrie/pen/PojGYLo */
       
-.container {
+.header-container {
     width: 45%;
     max-height: 300px;
     color: var(--color);
@@ -83,7 +83,7 @@
       4%, 100% {  text-shadow: none; transform: none; }
     }
 
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     /* Adjust the font size for better readability on mobile devices */
     .stack span {
         font-size: 5rem; /* Adjust the font size to a smaller value */
