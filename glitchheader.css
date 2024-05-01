@@ -89,6 +89,9 @@
         font-size: 5rem; /* Adjust the font size to a smaller value */
     }
  
+    .stack span:nth-child(odd) { --glitch-translate: 100px; }
+    .stack span:nth-child(even) { --glitch-translate: -400px; }
+
     .container {
       font-size: 0.6rem;
     }
