@@ -92,4 +92,13 @@
     .container {
       font-size: 0.6rem;
     }
+
+    .left{
+      font-size: 1.3rem;
+      top: auto;
+    }
+    .right{
+      font-size: 1.3rem;
+      top: auto;
+    }
 }
