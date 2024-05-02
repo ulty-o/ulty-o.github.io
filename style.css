@@ -10,6 +10,7 @@
 
 }
 
+
 body {
   background-color: #222;
   margin: auto; 
@@ -17,14 +18,26 @@ body {
   margin-top: 0px;
   margin-right: 0px;
   margin-left: 0px;
-  margin-bottom: 4rem;
+  margin-bottom: 4.5rem;
   height: 100%;
   font-size: 1.5rem;
 }
 
-img{
+h3{
+  font-weight: unset;
+}
+
+#header_img{
   float: right;
   border-radius: 100%; 
+}
+
+#mastodon_logo{
+  max-width: 4%; 
+  max-height: 4%; 
+  border-radius: 10px;
+  position: relative;
+  top:-10px;
 }
 
 #typed{
@@ -77,8 +90,9 @@ label{
 
 #links{
   width:20%;
+  min-width: 20%;
 } 
-#aboutme{
+#mainbody{
   width: 80%;
   font-size: 1.75rem;
 }
@@ -100,7 +114,7 @@ footer {
     padding-left: 0px;
     padding-right: 0px;
   }
-  img{
+  #header_img{
     margin-top: 30px;
     max-width: 25%; 
     max-height: 25%;
@@ -120,12 +134,13 @@ footer {
   label{
     width:auto;
   }
-    #aboutme{
-      width:100%
-    }
+  #mainbody{
+    width:100%
+  }
   
 }
   @media (max-width: 900px) {
+    
     #typed{
       height:50px;
       font-size: medium;
