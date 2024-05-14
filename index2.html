@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik+Glitch" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-    <!-- <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="glitchheader.css">
     <script src="typing.js"></script>
+    <script src="accordion.js"></script>    
     <title>ulty</title>
 </head>
 
 <body onload="loadTyping()">
-    <header >
-        <!-- <div class="nes-container is-dark" style="border-radius: 10px; margin:auto;"> -->
-        <!-- <img src="imgs/sh.png" alt="Banner"> -->
-            <div class="container">
+    <div class="nes-container is-dark">
+        <img src="imgs/ulty.jpg" id="header_img"/>
+    <div class="header-container">
                 <span class="left">self-actualizing</span>
                 <div class="stack" style="--stacks: 3;">
                     <span style="--index: 0;">ulty_o</span>
@@ -27,41 +27,85 @@
                 </div>
                 <span class="right">in cyberspace</span>
             </div>
-            <!-- <p id="typed"></p> -->
-        </header>
-          
-    <div id="wrap">
-        <div class="textbox" style="width:85%;">
-            <p class="title">about me</p>
-            <p>Pellentesque a eros eget quam euismod sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed tincidunt nibh, ac tristique urna. Quisque a mi sed lectus tempor sollicitudin. Vivamus venenatis porttitor nisl. Morbi eleifend nisl at nibh semper mattis. Morbi interdum neque et justo congue vulputate. Vestibulum eget ornare neque. Nullam suscipit risus at feugiat lobortis. Vivamus pharetra facilisis urna, quis eleifend nisl. Quisque sed luctus elit.</p>
-        </div >
-
-        <div id="links" class="textbox">
-            <p class="title">links</p>
-            <nav > 
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#Core Values">About Me</a></li>
-                    <li><a href="games.html">My Games</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-            </nav>
+            <div class="nes-container is-dark">
+                <p id="typed"></p>
+            </div>
         </div>
+   
+    <div id="wrap">
+        <div id="links" class="nes-container is-dark with-title">
+            <p class="title">links</p>
+                    <div style="background-color:#212529; padding:0; position: relative; top: -10px;">
+                        <label>
+                            <input type="radio" class="nes-radio is-dark" name="answer"/>
+                            <span id="radio-text"><a href="./index.html">home</a></span>
+                        </label>
+                        <label>
+                            <input type="radio" class="nes-radio is-dark" name="answer2" checked/>
+                            <span><a href="#">philosophy</a></span>
+                        </label>
+                        <label>
+                            <input type="radio" class="nes-radio is-dark" name="answer3"/>
+                            <span><a href="#">todo</a></span>
+                        </label>
+                        <label>
+                            <input type="radio" class="nes-radio is-dark" name="answer4"/>
+                            <span><a href="#">todo</a></span>
+                        </label>
+                    </div>
+        </div>
+    
+        <div id = "mainbody" class="nes-container is-dark with-title">
+            <!-- <p class="title">core values and beliefs</p> -->
+            <button class="nes-btn">** core values and beliefs **</button>
+            <div class="panel">
+            <button class="nes-btn">** values **</button>
+            <div class="panel">
+                <ul>
+                    <li>give everyone a base amount of love and respect</li> 
+                    <li>honesty is a better social investment than dishonesty</li>
+                    <li>enjoying life is more important than accumulating wealth</li> 
+                    <li>help others if you can</li>
+                </ul>
+            </div>
+            <button class="nes-btn">** meta-beliefs **</button>
+            <div class="panel">
+            <ul>
+                <li>all things i think i know are subject to change</li> 
+                <li>there is no guarantee that anything will stay the same, or that anything will change. however, somethings have never changed and somethings always do</li>
+                <li>deeper truth is found through questioning everything, even the things you already think you know</li> 
+                <li>all things are probably beyond a binary true or false </li>
+            </ul>
+            </div>
+            <button class="nes-btn">** world-beliefs **</button>
+            <div class="panel">
+            <ul>
+                <li>everything anyone knows in life is just a series of beliefs</li> 
+                <li>every living thing is born into the world subject to a series of laws</li>
+                <li>every person is living life through their own lens and story, and everyone else is just another character who mostly disappears when off screen</li> 
+                <li>while most people have more potential to learn than they realize/accept, not everyone is capable of learning all things, and that's okay</li>
+                <li>most people have a helpful selection of knowledge on something</li>
+            </ul>
+            </div>
+            </div>
+            </p>
+        </div >
     </div>
-        <div class="textbox">
+
+        <div class="nes-container is-dark with-title">
             <p class="title">socials</p>
-            <!-- <p>No contact information provided
+            <!-- <p>No contact information provided.</p> -->
             <section class="icon-list">
-                twitter
+                <!-- twitter -->
                 <a href="https://twitter.com/ulty_o"><i class="nes-icon twitter is-medium"></i></a>
             
-                 github
+                <!-- github -->
                 <i class="nes-icon github is-medium"></i>
-            
-                youtube
+                <a href=https://defcon.social/@ulty_o rel="me"><img src="./imgs/defcon.social.jpg" id="mastodon_logo"/></a>
+                <!-- youtube
                 <i class="nes-icon youtube is-large"></i>
-                
-            </section>-->
+                -->
+            </section>
         </div >
  
         <footer>

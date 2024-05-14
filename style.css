@@ -88,6 +88,11 @@ label{
   width: 99%;
 }
 
+.panel{
+  display: none;
+  overflow: hidden;
+}
+
 #links{
   width:20%;
   min-width: 20%;
