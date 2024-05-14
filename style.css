@@ -7,7 +7,7 @@
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;
   margin: 0;
-
+  font-size: medium;
 }
 
 
@@ -56,18 +56,13 @@ a{
   margin-bottom: 10px;
   margin-left: 10px;
   color: #fff;
-  font-size: 1.7em;
+  font-size: 2.5rem;
 }
 
 a:hover {
   color: #fff;
 }
 
-.panel {
-  /* border: solid; */
-  border-radius: 10px;
-  width: 100%;
-}
 label{
   width: 100%;
   padding: 0;
@@ -107,6 +102,7 @@ button:hover{
 }
 
 .panel{
+  font-size: 2rem;
   display: none;
   overflow: hidden;
 }
@@ -154,6 +150,9 @@ footer {
     width:100%;
     font-size: 1.5rem;
   }
+  #typed{
+   font-size: 1.5rem; 
+  }
   label{
     width:auto;
   }
@@ -166,9 +165,13 @@ footer {
     
     #typed{
       height:50px;
-      font-size: medium;
+      font-size: 1rem;
+      padding:0;
+      margin: 0;
      }
      #links{
+      padding-left: 1px;
+      padding-right: 1px;
       font-size: 0.9rem;
     }
 } 
