@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="glitchheader.css">
     <script src="typing.js"></script>
+    <script src="accordion.js"></script>    
     <title>ulty</title>
+    <link rel="icon" type="image/x-icon" href=""/>
 </head>
 
 <body onload="loadTyping()">
@@ -56,21 +58,39 @@
     
         <div id = "mainbody" class="nes-container is-dark with-title">
             <p class="title">core values and beliefs</p>
-            <h3>** values **</h3>
-            <ul>
-                <li>give everyone a base amount of love and respect</li> 
-                <li>honesty is a better social investment than dishonesty</li>
-                <li>enjoying life is more important than accumulating wealth</li> 
-                <li>help others if you can</li>
-            </ul>
-            <h3>** meta-beliefs **</h3>
+            <!-- <button class="nes-btn">** core values and beliefs **</button> -->
+            <!-- <div class="panel"> -->
+            <div style="background-color:#212529; padding:0; position: relative; top: -10px; display:grid;">
+        
+            <div class="btn">
+                <input type="radio" class="nes-radio is-dark" name="values" checked/>
+                <span id="radio-text"><a href="#0">values</a></span>    
+            </div>
+            <div class="panel">
+                <ul>
+                    <li>give everyone a base amount of love and respect</li> 
+                    <li>honesty is a better social investment than dishonesty</li>
+                    <li>enjoying life is more important than accumulating wealth</li> 
+                    <li>help others if you can</li>
+                </ul>
+            </div>
+            <div class="btn">
+            <input type="radio" class="nes-radio is-dark" name="meta-beliefs" checked/>
+            <span id="radio-text"><a href="#0">meta-beliefs</a></span> 
+        </div>   
+            <div class="panel">
             <ul>
                 <li>all things i think i know are subject to change</li> 
                 <li>there is no guarantee that anything will stay the same, or that anything will change. however, somethings have never changed and somethings always do</li>
                 <li>deeper truth is found through questioning everything, even the things you already think you know</li> 
                 <li>all things are probably beyond a binary true or false </li>
             </ul>
-            <h3>** world-beliefs **</h3>
+            </div>
+            <div class="btn">
+            <input type="radio" class="nes-radio is-dark" name="world-beliefs" checked/>
+            <span id="radio-text"><a href="#0">world-beliefs</a></span>
+        </div>    
+            <div class="panel">
             <ul>
                 <li>everything anyone knows in life is just a series of beliefs</li> 
                 <li>every living thing is born into the world subject to a series of laws</li>
@@ -78,6 +98,8 @@
                 <li>while most people have more potential to learn than they realize/accept, not everyone is capable of learning all things, and that's okay</li>
                 <li>most people have a helpful selection of knowledge on something</li>
             </ul>
+            </div>
+            </div>
             </p>
         </div >
     </div>

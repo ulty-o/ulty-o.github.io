@@ -1,6 +1,15 @@
+
+const quotes_array =[
+  "\"your effort to remain what you are is what limits you...\"",
+  "\"High socks are cool, gotta wear them outside!\"",
+  "\"The computer’s kaput and we’re drifting through space towards certain oblivion.\""
+];
 let interval
+let write_text=""
+
 /* The speed/duration of the effect in milliseconds */
 function loadTyping() {
+  write_text=quotes_array[getRandomInt(quotes_array.length)]
     let i = 0;
     setTimeout(function(){
         let speed = 40;
@@ -46,12 +55,8 @@ function loadTyping() {
 }
 
 function type(i){
-    //console.log("typing " +  write_text.charAt(i))
-    //strin += getRandomCharacter();
     document.getElementById("typed").textContent = write_text.substring(0,i)+"|";
- 
 }
-const write_text="your effort to remain what you are is what limits you..."
 const write_text2="´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´·—‡¾äÓÚâÔœ#WKqAâÙFeV7’´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´\n"+
 "´´´´´´´´´´´´´´´´´´´´´´´´´´´´´·¼ÜÁÈÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆËÁÖí¨´´´´´´´´´´´´´´´´´´´´´´´´´´´´´\n"+
 "´´´´´´´´´´´´´´´´´´´´´´´´´¨IÁÆÆÆÆÆÆÆÆÆËÅRßÿ9&Vó@±2Oá¶g#ÈÑÆÆÆÆÆÆÆÆØü˜´´´´´´´´´´´´´´´´´´´´´´´´´\n"+
@@ -116,11 +121,9 @@ const write_text3 =
 "}"; 
 
 
-function getRandomCharacter() {
-  const randomCharCode = Math.floor(Math.random() * (126 - 32 + 1)) + 32;
-  return String.fromCharCode(randomCharCode);
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }
-
 
 // Example usage:
 //const randomChar = getRandomCharacter();

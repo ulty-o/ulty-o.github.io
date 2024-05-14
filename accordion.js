@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-let accordion = document.getElementsByClassName("nes-btn");
+let accordion = document.getElementsByClassName("btn");
 let i;
 console.log("loaded")
 console.log("accordion count: " + accordion.length)
