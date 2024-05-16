@@ -1,8 +1,9 @@
 
 const quotes_array =[
   "\"your effort to remain what you are is what limits you...\"",
-  "\"High socks are cool, gotta wear them outside!\"",
-  "\"The computer’s kaput and we’re drifting through space towards certain oblivion.\""
+  "\"high socks are cool, gotta wear them outside!\"",
+  "\"the computer’s kaput and we’re drifting through space towards certain oblivion.\"",
+  "\"we weep for a bird’s cry, but not for a fish’s blood. blessed are those with a voice.\""
 ];
 let interval
 let write_text=""

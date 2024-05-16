@@ -7,7 +7,6 @@
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;
   margin: 0;
-  font-size: medium;
 }
 
 
@@ -102,7 +101,7 @@ button:hover{
 }
 
 .panel{
-  font-size: 2rem;
+ 
   display: none;
   overflow: hidden;
 }
@@ -113,7 +112,7 @@ button:hover{
 } 
 #mainbody{
   width: 80%;
-  font-size: 1.75rem;
+  font-size: 1.7rem;
 }
 
 footer {
@@ -138,6 +137,10 @@ footer {
     max-width: 25%; 
     max-height: 25%;
   }
+  #mainbody{
+    font-size: 1.5rem;
+    width:100%;
+  }
   #wrap{
     padding-right: 7px;
     margin: 0;
@@ -156,13 +159,9 @@ footer {
   label{
     width:auto;
   }
-  #mainbody{
-    width:100%
-  }
   
 }
   @media (max-width: 900px) {
-    
     #typed{
       height:50px;
       font-size: 1rem;
