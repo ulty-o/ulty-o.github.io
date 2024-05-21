@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="glitchheader.css">
     <script src="typing.js"></script>
+    <script src="accordion.js"></script>    
     <title>ulty</title>
+    <link rel="icon" type="image/x-icon" href=""/>
 </head>
 
 <body onload="loadTyping()">
@@ -36,18 +38,18 @@
             <p class="title">links</p>
                     <div style="background-color:#212529; padding:0; position: relative; top: -10px;">
                         <label>
-                            <input type="radio" class="nes-radio is-dark" name="answer" checked/>
-                            <span id="radio-text"><a href="#">home</a></span>
+                            <input type="radio" class="nes-radio is-dark" name="answer"/>
+                            <span id="radio-text"><a href="./index.html">home</a></span>
                         </label>
                         <label>
                             <input type="radio" class="nes-radio is-dark" name="answer2"/>
                             <span><a href="./philosophy.html">philosophy</a></span>
                         </label>
                         <label>
-                            <input type="radio" class="nes-radio is-dark" name="answer3"/>
-                            <span><a href="./favourites.html">fav things</a></span>
+                            <input type="radio" class="nes-radio is-dark" name="answer3" checked/>
+                            <span><a href="#">fav things</a></span>
                         </label>
-                       <!--  <label>
+                        <!-- <label>
                             <input type="radio" class="nes-radio is-dark" name="answer4"/>
                             <span><a href="#">todo</a></span>
                         </label> -->
@@ -55,13 +57,63 @@
         </div>
     
         <div id = "mainbody" class="nes-container is-dark with-title">
-            <p class="title">about me</p>
-            <p>i go by ulty. <br> 
-                im a programmer, a musician, and a thinker. <br>
-                to me, an online presence very loosely coupled to my irl is a step of freedom - sheading several barriers born of the physical and social.
-                my hope is to pursue a personhood deeper than possible in the feedback loop of the physical-social spaces i exist, using cyberspace as a conduit.
-                this is just a site to hold home to this persona. <br> 
-                this is ulty's home. welcome :3     
+            <p class="title">things i like</p>
+            <div style="background-color:#212529; padding:0; position: relative; top: -10px; display:grid;">
+        
+            <div class="btn">
+                <input type="radio" class="nes-radio is-dark" name="general" checked/>
+                <span id="radio-text"><a href="#0">General</a></span>    
+            </div>
+            <div class="panel">
+                <ul>
+                    <li>playing music (especially guitar)</li> 
+                    <li>instruments (especially guitar ... x3)</li>
+                    <li>computers</li> 
+                    <li>programming</li>
+                    <li>caffenie</li>
+                    <li>plushies</li>
+                    <li>cute things</li>
+                    <li>cyberpunk things</li>
+                </ul>
+            </div>
+            <div class="btn">
+            <input type="radio" class="nes-radio is-dark" name="animes" checked/>
+            <span id="radio-text"><a href="#0">favourite animes</a></span> 
+        </div>   
+            <div class="panel">
+            <ul>
+                <li>ghost in the shell</li>
+                <li>bocchi the rock</li>
+                <li>k-on</li> 
+                <li>cowboy bebop</li>
+                <li>princess jellyfish</li>
+                <li>gurren lagann</li>
+                <li>sword art online II</li>
+                <li>one punch</li>
+                <li>death note</li>
+                <li>onimai: i'm now your sister!</li>
+                <li>trigun</li>
+                <li>your lie in april</li>
+                <li>serial experiment lain</li>
+            </ul>
+            </div>
+            <div class="btn">
+            <input type="radio" class="nes-radio is-dark" name="games" checked/>
+            <span id="radio-text"><a href="#0">favourite games</a></span>
+        </div>    
+            <div class="panel">
+            <ul>
+                <li>super smash bros ultimate</li>
+                <li>the pokemon series</li>
+                <li>the kingdom hearts series</li>
+                <li>pistol whip</li>
+                <li>earthbound</li>
+                <li>starfox</li>
+                <li>need for speed - most wanted (2005)</li>
+                <li>dance dance revolution</li>
+            </ul>
+            </div>
+            </div>
             </p>
         </div >
     </div>
@@ -75,7 +127,6 @@
             
                 <!-- github -->
                 <i class="nes-icon github is-medium"></i>
-                
                 <a href=https://defcon.social/@ulty_o rel="me"><img src="./imgs/defcon.social.jpg" id="mastodon_logo"/></a>
                 <!-- youtube
                 <i class="nes-icon youtube is-large"></i>
