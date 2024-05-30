@@ -163,7 +163,7 @@ footer {
 }
   @media (max-width: 900px) {
     #typed{
-      height:50px;
+      /* height:50px; */
       font-size: 1.5rem;
       padding:0;
       margin: 0;

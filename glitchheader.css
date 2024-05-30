@@ -97,11 +97,13 @@
     }
 
     .left{
-      font-size: 1.7rem;
+      font-size: 1.9rem;
       top: auto;
+      white-space: nowrap;
     }
     .right{
-      font-size: 1.7rem;
+      font-size: 1.9rem;
       top: auto;
+      white-space: nowrap;
     }
 }

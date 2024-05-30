@@ -1,9 +1,9 @@
 
 const quotes_array =[
-  "\"your effort to remain what you are is what limits you...\"",
-  "\"high socks are cool, gotta wear them outside!\"",
-  "\"the computer’s kaput and we’re drifting through space towards certain oblivion.\"",
-  "\"we weep for a bird’s cry, but not for a fish’s blood. blessed are those with a voice.\""
+  "\"your effort to remain what you are is what limits you...\" -Project 2501",
+  "\"high socks are cool, gotta wear them outside!\" -Edward Wong Hau Pepelu Tivrusky IV",
+  "\"the computer’s kaput and we’re drifting through space towards certain oblivion.\" -Edward Wong Hau Pepelu Tivrusky IV",
+  "\"we weep for a bird’s cry, but not for a fish’s blood. blessed are those with a voice.\" -Major Motoko Kusanagi"
 ];
 let interval
 let write_text=""
@@ -30,14 +30,16 @@ function loadTyping() {
     let cursor = true;
     setInterval(function(){
         if (i >= write_text.length) {
-            
+
         if(cursor) {
             //console.log("1")
-            document.getElementById('typed').textContent = write_text ;
+            document.getElementById('typed').textContent = write_text + "\u00A0";;
             cursor = false;
           }else {
             //console.log("2")
             document.getElementById('typed').textContent = write_text + "|";
+            const height = document.getElementById('typed').offsetHeight;
+            document.getElementById('typed').style.height = height + 'px';
             cursor = true;
           }
         }
